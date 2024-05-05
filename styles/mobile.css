@@ -40,8 +40,8 @@ body {
         gap: 20px;
     }
     .assuntos button {
-        background-color: var(--primary-text-color);
-        color: #ffffffc4;
+        background-color: var(--bg-btn);
+        color: #ffffff;
         border: none;
         border-radius: 8px;
         padding: 12px;
