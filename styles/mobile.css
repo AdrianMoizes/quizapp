@@ -33,4 +33,39 @@ body {
     .boas-vindas p {
         color: var(--secundary-text-color);
     }
+
+    .assuntos {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .assuntos button {
+        background-color: var(--primary-text-color);
+        color: #ffffffc4;
+        border: none;
+        border-radius: 8px;
+        padding: 12px;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+        box-shadow: var(--shadow-btn);
+    }
+
+    .btn-html div {
+        background: var(--bg-html);
+        border-radius: 5px;
+    }
+    .btn-css div {
+        background: var(--bg-css);
+        border-radius: 5px;
+    }
+    .btn-js div {
+        border-radius: 5px;
+        background: var(--bg-js);
+    }
+    .btn-acess div {
+        border-radius: 5px;
+        background: var(--bg-acessibilidade);
+    }
 }

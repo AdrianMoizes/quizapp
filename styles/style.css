@@ -10,4 +10,9 @@
     --bg-color: linear-gradient(to top, #f68b73, #f7b085, #f2d9ba, #f0e4c3, #f9faea);
     --primary-text-color: #313e51;
     --secundary-text-color: #626c7f;
+    --shadow-btn:rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgb(57, 57, 57) 0px 3px 7px -3px;
+    --bg-html: #fff1e9;
+    --bg-css: #e0fdef;
+    --bg-js: #ebf0ff;
+    --bg-acessibilidade: #f6e7ff;
 }
