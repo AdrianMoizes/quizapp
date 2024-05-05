@@ -1,0 +1,19 @@
+
+body {
+    height: 100vh;
+    background: var(--bg-color);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media(max-width: 425px) {
+    header {
+        padding: 20px 10px;
+        display: flex;
+        justify-content: center;
+    }
+    .logo img {
+        width: 250px;
+        padding: 8px 0;
+    }
+}

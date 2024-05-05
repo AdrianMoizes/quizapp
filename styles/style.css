@@ -1,0 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --bg-color: linear-gradient(to top, #f68b73, #f7b085, #f2d9ba, #f0e4c3, #f9faea);
+}
