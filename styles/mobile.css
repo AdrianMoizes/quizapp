@@ -8,12 +8,29 @@ body {
 
 @media(max-width: 425px) {
     header {
-        padding: 20px 10px;
+        padding: 50px 10px 20px 10px;
         display: flex;
         justify-content: center;
     }
     .logo img {
-        width: 250px;
+        width: 300px;
         padding: 8px 0;
+    }
+
+    main {
+        padding: 5px 25px;
+    }
+    .boas-vindas {
+        margin-bottom: 40px;
+    }
+    .boas-vindas h2{
+        font-size: 25px;
+        font-weight: 400;
+        color: var(--primary-text-color);
+        margin-bottom: 16px;
+    }
+
+    .boas-vindas p {
+        color: var(--secundary-text-color);
     }
 }
