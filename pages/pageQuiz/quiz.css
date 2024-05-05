@@ -18,7 +18,9 @@
     --bg-css: #e0fdef;
     --bg-js: #ebf0ff;
     --bg-acessibilidade: #f6e7ff;
-    --bg-white: #fff
+    --bg-white: #fff;
+    --bg-green: #26d782;
+    --bg-red: #ee5454;
 }
 body {
     height: 100vh;
@@ -106,7 +108,22 @@ main{
     color: var(--bg-white);
 }
 .alternativas label:has(input:checked){
-    
+    outline: 3px solid #aa08ef;
+    & span {
+        background-color: #aa08ef;
+    }
+}
+.alternativas label#correta {
+    outline: 3px solid var(--bg-green);
+    & span {
+        background: var(--bg-green);
+    }
+}
+.alternativas label#incorreta {
+    outline: 3px solid var(--bg-red);
+    & span {
+        background: var(--bg-red);
+    }
 }
 .alternativas input {
     display: none;
@@ -117,10 +134,10 @@ main{
     gap: 20px;
 }
 .alternativas div span {
-    background: var(--bg-acessibilidade);
+    background: var(--bg-btn);
     width: 40px;
     height: 40px;
-    color: #b76fd6;
+    color: var(--bg-white);
     display: block;
     display: flex;
     align-items: center;
@@ -138,4 +155,73 @@ main{
     width: 100%;
     font-size: 18px;
     font-weight: 500;
+}
+@media(min-width:1024px){
+    header {
+        padding: 0;
+    }
+    .logo img {
+        width: 500px;
+        padding: 25px;
+    }
+    main{
+        display: flex;
+        justify-content: center;
+        gap: 130px;
+    }
+    section {
+        width: 100%;
+    }
+    .assunto{
+        padding: 20px;
+        gap: 5px;
+    }
+    .assunto-icone {
+        width:56px;
+        height: 56px;
+    }
+    .assunto h1{
+        font-size: 40px;
+    }
+    .pergunta {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 50%;
+    }
+    .barra-progresso {
+        max-width: 500px;
+    }
+    .pergunta p {
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 26px;
+    }
+    .pergunta h2 {
+        font-size: 36px;
+        line-height: 42px;
+    }
+    .alternativas {
+        max-width: 500px;
+
+    }
+    .alternativas div {
+        gap: 32px;
+    }
+    .alternativas div span {
+        width: 56px;
+        height: 56px;
+        font-size: 28px;
+    }
+    .alternativas label {
+        font-size: 22px;
+        padding: 18px 20px;
+    }
+    .alternativas form {
+        gap: 24px;
+        margin-bottom: 24px;
+    }
+    .alternativas button {
+        font-size: 22px;
+    }
 }
