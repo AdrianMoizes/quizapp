@@ -1,11 +1,14 @@
+/*import font*/
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
+/*reset*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Rubik", Arial, Helvetica, sans-serif;
 }
+/*variáveis*/
 :root {
     --bg-color: linear-gradient(to top, #f68b73, #f7b085, #f2d9ba, #f0e4c3, #f9faea);
     --primary-text-color: #313e51;
@@ -17,3 +20,46 @@
     --bg-js: #ebf0ff;
     --bg-acessibilidade: #f6e7ff;
 }
+
+@media(min-width:1024px){
+    header {
+        padding: 50px 10px 100px 10px;
+    }
+    .logo img {
+        width: 450px;
+        padding: 25px;
+    }
+    main{
+        display: flex;
+        justify-content: space-around;
+        gap: 50px;
+    }
+    section {
+        width: 100%;
+    }
+    .boas-vindas h2{
+        font-size: 54px;
+        font-weight: 500;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+    .boas-vindas p{
+        font-size: 25px;
+        font-weight: 400;
+        text-align: center;
+    }
+    .assuntos {
+        gap: 25px;
+    }
+    .assuntos button{
+        font-size: 20px;
+        padding: 20px;
+        
+    }
+    button div img{
+        width: 60px;
+        height: 60px;
+        padding: 8px;
+    }
+}
+

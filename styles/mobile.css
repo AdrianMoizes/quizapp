@@ -1,45 +1,37 @@
-
 body {
     height: 100vh;
     background: var(--bg-color);
-    background-size: cover;
-    background-repeat: no-repeat;
 }
-
-@media(max-width: 425px) {
-    header {
+header {
         padding: 50px 10px 20px 10px;
         display: flex;
         justify-content: center;
-    }
-    .logo img {
+}
+.logo img {
         width: 300px;
         padding: 8px 0;
-    }
-
-    main {
+}
+main {
         padding: 5px 25px;
-    }
-    .boas-vindas {
+}
+.boas-vindas {
         margin-bottom: 40px;
-    }
-    .boas-vindas h2{
+}
+.boas-vindas h2{
         font-size: 25px;
         font-weight: 400;
         color: var(--primary-text-color);
         margin-bottom: 16px;
-    }
-
-    .boas-vindas p {
+}
+.boas-vindas p {
         color: var(--secundary-text-color);
-    }
-
-    .assuntos {
+}
+.assuntos {
         display: flex;
         flex-direction: column;
         gap: 20px;
-    }
-    .assuntos button {
+}
+.assuntos button {
         background-color: var(--bg-btn);
         color: #ffffff;
         border: none;
@@ -52,22 +44,20 @@ body {
         box-shadow: var(--shadow-btn);
         font-size: 18px;
         font-weight: 500;
-    }
-
-    .btn-html div {
+}
+.btn-html div {
         background: var(--bg-html);
         border-radius: 5px;
-    }
-    .btn-css div {
+}
+.btn-css div {
         background: var(--bg-css);
         border-radius: 5px;
-    }
-    .btn-js div {
+}
+.btn-js div {
         border-radius: 5px;
         background: var(--bg-js);
-    }
-    .btn-acess div {
+}
+.btn-acess div {
         border-radius: 5px;
         background: var(--bg-acessibilidade);
-    }
 }
