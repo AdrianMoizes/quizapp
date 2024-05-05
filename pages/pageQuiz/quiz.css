@@ -1,0 +1,141 @@
+/*import font*/
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --bg-color:linear-gradient(to right bottom, #cecdcf, #c7b7d3, #c0a0d6, #bb89d7, #b76fd6);
+    --primary-text-color: #313e51;
+    --secundary-text-color: #626c7f;
+    --bg-btn: #324a6de5 ;
+    --shadow-btn:rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgb(57, 57, 57) 0px 3px 7px -3px;
+    --bg-html: #fff1e9;
+    --bg-css: #e0fdef;
+    --bg-js: #ebf0ff;
+    --bg-acessibilidade: #f6e7ff;
+    --bg-white: #fff
+}
+body {
+    height: 100vh;
+    background: var(--bg-color);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.assunto {
+    justify-content: center;
+    display: flex;
+    padding: 5vw;
+    align-items: center;
+    gap: 25px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.logo img {
+    width: 250px;
+    text-align: center;
+}
+.assunto-icone{
+    background: var(--bg-acessibilidade);
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    padding: 5px;
+}
+.assunto-icone img{
+    width: 100%;
+}
+.assunto h1 {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--primary-text-color);
+}
+main{
+    padding: 0px 24px;
+}
+.pergunta{
+    margin-bottom: 40px;
+}
+.pergunta p {
+    font-style: italic;
+    font-size: 14px;
+    color: var(--secundary-text-color);
+    margin-bottom: 12px;
+    line-height: 24px;
+}
+.pergunta h2 {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--primary-text-color);
+    margin-bottom: 24px;
+}
+.barra-progresso{
+    background: var(--bg-white);
+    height: 16px;
+    padding: 4px;
+    border-radius: 999px;
+}
+.barra-progresso div{
+    height: 100%;
+    width: 50%;
+    background-color: #b76fd6;
+    border-radius: 999px;
+}
+.alternativas form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+.alternativas label{
+    padding: 12px;
+    background: var(--bg-btn);
+    display:block;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 12px;
+    box-shadow: var(--shadow-btn);
+    color: var(--bg-white);
+}
+.alternativas label:has(input:checked){
+    
+}
+.alternativas input {
+    display: none;
+}
+.alternativas div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.alternativas div span {
+    background: var(--bg-acessibilidade);
+    width: 40px;
+    height: 40px;
+    color: #b76fd6;
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    flex-shrink: 0;
+}
+
+.alternativas button {
+    padding: 16px;
+    border-radius: 12px;
+    border: none;
+    background: var(--bg-acessibilidade);
+    color: var(--primary-text-color);
+    width: 100%;
+    font-size: 18px;
+    font-weight: 500;
+}
