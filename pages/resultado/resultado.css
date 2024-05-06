@@ -19,8 +19,6 @@
     --bg-js: #ebf0ff;
     --bg-acessibilidade: #f6e7ff;
     --bg-white: #fff;
-    --bg-green: #26d782;
-    --bg-red: #ee5454;
 }
 body {
     height: 100vh;
@@ -31,15 +29,15 @@ body {
 .assunto {
     justify-content: center;
     display: flex;
-    padding: 5vw;
+    padding: 10px;
     align-items: center;
-    gap: 25px;
+    gap: 10px;
 }
 .logo{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    padding: 10px;
 }
 .logo img {
     width: 250px;
@@ -81,6 +79,7 @@ main h2 strong{
     gap: 16px;
     border-radius: 12px;
     margin-bottom: 12px;
+    box-shadow: var(--shadow-btn);
 }
 .pontuacao strong {
     font-size: 88px;
@@ -101,6 +100,7 @@ main button {
     font-size: 18px;
     font-weight: 500;
     transition: 0.2s;
+    box-shadow: var(--shadow-btn);
 }
 main button:hover{
     background: #aa08ef7f;

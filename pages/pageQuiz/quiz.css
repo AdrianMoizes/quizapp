@@ -9,7 +9,14 @@
 }
 
 :root {
-    --bg-color:linear-gradient(to right bottom, #cecdcf, #c7b7d3, #c0a0d6, #bb89d7, #b76fd6);
+    --bg-color-html: linear-gradient(to top, #f68b73, #f7b085, #f2d9ba, #f0e4c3, #f9faea);
+
+    --bg-color-css: linear-gradient(to left top, #005954, #1d726c, #338b85, #48a69e, #5dc1b9);
+
+    --bg-color-acessibilidade:linear-gradient(to right bottom, #cecdcf, #c7b7d3, #c0a0d6, #bb89d7, #b76fd6);
+
+    --bg-color-js:linear-gradient(to left top, #051937, #244b6b, #4b849e, #7dc0cf, #b9ffff);
+
     --primary-text-color: #313e51;
     --secundary-text-color: #626c7f;
     --bg-btn: #324a6de5 ;
@@ -24,16 +31,28 @@
 }
 body {
     height: 100vh;
-    background: var(--bg-color);
+    background: var(--bg-color-html);
     background-repeat: no-repeat;
     background-size: cover;
+}
+body.html {
+    background: var(--bg-color-html);
+}
+body.css {
+    background: var(--bg-color-css);
+}
+body.javascript {
+    background: var(--bg-color-js);
+}
+body.acessibilidade {
+    background: var(--bg-color-acessibilidade);
 }
 .assunto {
     justify-content: center;
     display: flex;
-    padding: 5vw;
+    padding: 10px;
     align-items: center;
-    gap: 25px;
+    gap: 10px;
 }
 .logo{
     display: flex;
@@ -51,6 +70,18 @@ body {
     height: 40px;
     border-radius: 5px;
     padding: 5px;
+}
+.assunto-icone.html {
+    background: var(--bg-html);
+}
+.assunto-icone.css {
+    background: var(--bg-css);
+}
+.assunto-icone.javascript {
+    background: var(--bg-js);
+}
+.assunto-icone.acessibilidade {
+    background: var(--bg-acessibilidade);
 }
 .assunto-icone img{
     width: 100%;

@@ -1,6 +1,6 @@
 body {
     height: 100vh;
-    background: var(--bg-color);
+    background: var(--bg-color-html);
 }
 header {
         padding: 50px 10px 20px 10px;
@@ -44,8 +44,13 @@ main {
         box-shadow: var(--shadow-btn);
         font-size: 18px;
         font-weight: 500;
+        cursor: pointer;
+        text-align: center;
 }
-.btn-html div {
+button div{
+   padding: 5px;
+}
+.btn-html div{
         background: var(--bg-html);
         border-radius: 5px;
 }
