@@ -213,7 +213,7 @@
             ]
         },
         {
-            "title": "Javascript",
+            "title": "JAVASCRIPT",
             "icon": "../../assets/images/icon-js.svg",
             "questions": [
                 {
@@ -319,7 +319,7 @@
             ]
         },
         {
-            "title": "Acessibilidade",
+            "title": "ACESSIBILIDADE",
             "icon": "../../assets/images/icon-accessibility.svg",
             "questions": [
                 {

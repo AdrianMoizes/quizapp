@@ -1,4 +1,8 @@
 const assunto = localStorage.getItem("assunto")
+let quiz = {}
+let pontos = 0 
+let pergunta  = 1
+
 
 const logoImg = document.querySelector(".logo img")
 const background = document.querySelector("body")
@@ -16,3 +20,15 @@ function alterar() {
     titulo.innerText = assunto
 }
 alterar()
+
+async function buscarPerguntas () {
+    const urlDados = "../../data.json"
+    await fetch(urlDados).then(resposta => resposta.json()).then(dados => {dados.quizzes.forEach(dado => {
+        if (dado.title === assunto){
+            quiz = dado
+        }
+    });
+})
+console.log(quiz)
+}
+buscarPerguntas()
