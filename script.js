@@ -1,10 +1,11 @@
-const botaoAssunto = document.querySelectorAll(".assuntos button")
+const botaoAssunto = document.querySelectorAll(".assuntos button");
 botaoAssunto.forEach(botao => {
-    botao.addEventListener("click", selecionarAssunto)
-})
+    botao.addEventListener("click", selecionarAssunto);
+});
 
 function selecionarAssunto (ev) {
-    const assunto = ev.target.innerText
-    localStorage.setItem("assunto", assunto)
-    window.location.href = "./pages/pageQuiz/quiz.html"
+    const classeBotao = ev.target.className;
+    const assunto = document.querySelector(`.${classeBotao} span`).innerText;
+    localStorage.setItem("assunto", assunto);
+    window.location.href = "./pages/pageQuiz/quiz.html";
 }
