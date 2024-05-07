@@ -103,17 +103,23 @@ function validarResposta(){
     
     if(pergunta === 10) {
         botaoEnviar.innerText = "Ver pontuação";
-        botaoEnviar.addEventListener("click", verPontuacao);
+        botaoEnviar.addEventListener("click", verPontuacao);   
     } else{
-        botaoEnviar.addEventListener("click", proximaPergunta);
+        botaoEnviar.addEventListener("click", proximaPergunta);  
     }
+
+    const inputsResposta = document.querySelectorAll(".alternativas input");
+    inputsResposta.forEach(input => {
+        input.disabled = true; // Desabilita os inputs
+    });
+
 
     if(resposta === quiz.questions[pergunta-1].answer){
         document.querySelector(`label[for='${idInputResposta}']`).setAttribute("id", "correta");
         pontos += 1;
     } else {
         document.querySelector(`label[for='${idInputResposta}']`).setAttribute("id", "incorreta");
-        document.querySelector(`label[for='${respostaCorretaId}']`).setAttribute("id", "correta");
+        document.querySelector(`label[for='${respostaCorretaId}']`).setAttribute("id", "correta"); 
     }
     pergunta += 1;
 }
@@ -132,13 +138,16 @@ function proximaPergunta(){
 function adicionarEventoInputs(){
     const inputResposta = document.querySelectorAll(".alternativas input");
     inputResposta.forEach(input => {
-        input.addEventListener("click", armazenarResposta)
+        if (!input.hasAttribute("disabled")) {
+            input.addEventListener("click", armazenarResposta);
 
-        if(input.value === quiz.questions[pergunta-1].answer){
-            respostaCorretaId = input.id;
-        };
+            if (input.value === quiz.questions[pergunta-1].answer){
+                respostaCorretaId = input.id;
+            };
+        }
     });
 }
+
 
 async function iniciar (){
     alterar();
