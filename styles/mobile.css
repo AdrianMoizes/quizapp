@@ -1,6 +1,6 @@
 body {
     height: 100vh;
-    background: var(--bg-color-html);
+    background: var(--bg-color-principal);
 }
 header {
         padding: 50px 10px 20px 10px;
@@ -20,11 +20,11 @@ main {
 .boas-vindas h2{
         font-size: 25px;
         font-weight: 400;
-        color: var(--primary-text-color);
+        color: var(--bg-white);
         margin-bottom: 16px;
 }
 .boas-vindas p {
-        color: var(--secundary-text-color);
+        color: var(--bg-white);
 }
 .assuntos {
         display: flex;
