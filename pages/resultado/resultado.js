@@ -6,6 +6,9 @@ const divIcon  = document.querySelector(".assunto-icone");
 const iconImg = document.querySelector(".assunto-icone img");
 const titulo = document.querySelector(".assunto h1");
 
+const btnJogarNovamente = document.querySelector("main button");
+
+btnJogarNovamente.addEventListener("click", jogarNovamente);
 
 function alterar() {
     divIcon.classList.add(assunto.toLowerCase());
@@ -15,13 +18,13 @@ function alterar() {
     logoImg.setAttribute("src",`../../assets/images/logo-${assunto.toLowerCase()}.png`);
     logoImg.setAttribute("alt", `logo-${assunto}`);
     titulo.innerText = assunto;
-}
-alterar()
+};
+alterar();
 
 function inserirResultado(){
-    const sectionPontuacao = document.querySelector(".pontuacao")
-    const divAssunto = document.querySelector(".assunto")
-    const pontos = localStorage.getItem("pontos")
+    const sectionPontuacao = document.querySelector(".pontuacao");
+    const divAssunto = document.querySelector(".assunto");
+    const pontos = localStorage.getItem("pontos");
 
     sectionPontuacao.innerHTML = `
         ${divAssunto.outerHTML}
@@ -30,7 +33,13 @@ function inserirResultado(){
         <p>
             de 10
         </p>
-    `
-}
+    `;
+};
 
-inserirResultado()
+function jogarNovamente (){
+    localStorage.removeItem("pontos");
+    localStorage.removeItem("assunto");
+    window.location.href = "../../index.html";
+};
+
+inserirResultado();
